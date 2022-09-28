@@ -2,7 +2,6 @@
 Console.Write("Введите число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 string result = "";
-int temp = 0;
 for(int i = 1; i <= number; i++)
 {
     result += $"{Math.Pow(i, 3)}, ";
