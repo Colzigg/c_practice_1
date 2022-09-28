@@ -2,10 +2,11 @@
 Console.Write("Введите любое число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int numConv = num;
-int result = 1;
+int sum = 0;
 while(numConv > 9)
-    {
-        numConv = numConv / 10;
-        result++;
-    }
-Console.Write($"В числе {num} - {result} цифр(ы).");
+{
+    sum += (numConv % 10);
+    numConv = numConv / 10;
+}
+sum += numConv;
+Console.Write($"В числе {num} сумма цифр равна {sum}");
